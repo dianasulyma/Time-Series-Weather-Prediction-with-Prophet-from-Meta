@@ -1,12 +1,26 @@
-### Time series prediction of weather patterns in Vancouver, BC. 
+## 🌦️ Time Series Prediction of Weather Patterns in Vancouver, BC
 
-This project implements time-series analysis and prediction using Meta's Prophet model on weather data in Vancouver, BC. 
+This project implements **time-series analysis and forecasting** using **Meta's Prophet** model on historical weather data from Vancouver, BC.
 
-#### Data 
 
-The data for this project comes from **Governments of Canada Historical Climate Data**, accessible via https://climate.weather.gc.ca. The data we will use spans 1970-2020 and includes fields for various daily weather and temperature measurements (snow, precipitation, max/min temperature, etc.).  
+### 📊 Data
 
-We downloaded 50 files for the Vancouver Harbour weather, one file per year from 1970 to 2020. We combined this dataset into a single file for easier analysis and modelling. 
+The dataset originates from the [**Government of Canada's Historical Climate Data**](https://climate.weather.gc.ca) portal.  
+It spans **1970–2020** and includes daily records of key weather variables such as:
 
-#### Prediction Model
-Prophet is an open-source forecasting tool developed by Meta. It is based on GAM (Generalized Additive Model). It is capable of handling seasonal changes granularly, meaning it can detect seasonality at the day, week, month, and year levels (Kwarteng & Andreevich, 2024). Prophet requires minimal data preprocessing and provides uncertainty estimates via prediction intervals (Kwarteng & Andreevich, 2024).
+- Maximum and minimum temperature  
+- Snowfall  
+- Precipitation
+- Rain
+- Other daily meteorological measurements  
+
+A total of **50 yearly files** were downloaded for the Vancouver Harbour weather station (one per year from 1970–2020).  
+These were combined into a **single consolidated dataset** for analysis and model training.
+
+
+### 🧠 Prediction Model
+
+**Prophet** is an open-source forecasting library developed by **Meta**.  
+It is based on a *Generalized Additive Model (GAM)* and is particularly effective for capturing complex **seasonality** patterns—daily, weekly, monthly, and yearly trends (Kwarteng & Andreevich, 2024).
+
+Prophet requires minimal preprocessing and generates forecasts with **prediction intervals**, providing estimates of uncertainty around future values.
