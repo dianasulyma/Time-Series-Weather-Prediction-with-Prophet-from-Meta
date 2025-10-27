@@ -4,7 +4,7 @@ This project implements time-series analysis and prediction using Meta's Prophet
 
 #### Data 
 
-The data for this project comes from **Governments of Canada Historical Climate Data**, accessible via https://climate.weather.gc.ca/. The data we will use spans 1970-2020 and includes fields for various daily weather and temperature measurements (snow, precipitation, max/min temperature, etc.).  
+The data for this project comes from **Governments of Canada Historical Climate Data**, accessible via https://climate.weather.gc.ca. The data we will use spans 1970-2020 and includes fields for various daily weather and temperature measurements (snow, precipitation, max/min temperature, etc.).  
 
 We downloaded 50 files for the Vancouver Harbour weather, one file per year from 1970 to 2020. We combined this dataset into a single file for easier analysis and modelling. 
 
